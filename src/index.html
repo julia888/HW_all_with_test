@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>HW all</title>
+    <script src="js/Conditions.js"></script>
+    <script src="js/cond_1.js"></script>
+    <script src="js/loop_2.js"></script>
+    <script src="js/array_1.js"></script>
+    <script src="js/func_1.js"></script>
+    <script src="js/Loop.js"></script>
+    <script src="js/Arrays.js"></script>
+    <script src="js/Func.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Тема: базовые задания</h1>
+    <div>
+        <h2><a href="#" onclick="showTask('task1')">Условные операторы</a></h2>
+        <ol id="task1" style="display:none">
+            <li><a href="#" onclick="showTask('task1_1')">Если а – четное посчитать а*б, иначе а+б</a><br>
+                <div id="task1_1" style="display:none">
+                    <label>
+                        <p>Введите a и b соответственно:</p>
+                        <input type="text" id="cond_1_1"><br><br>
+                        <input type="text" id="cond_1_2"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultCond_1(); col('task1_1')">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultCond_1"></p>
+                </div>
+            </li>
+
+            <li><a href="#" onclick="showTask('task1_2')">Определить какой четверти принадлежит точка с координатами (х,у)</a><br>
+                <div id="task1_2" style="display:none">
+                    <label>
+                        <p>Введите x и y соответственно:</p>
+                        <input type="text" id="cond_2_1"> <br><br>
+                        <input type="text" id="cond_2_2"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultCond_2(); col('task1_2')">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultCond_2"></p>
+                </div>
+            </li>
+
+            <li><a href="#" onclick="showTask('task1_3')">Найти суммы только положительных из трех чисел</a><br>
+                <div id="task1_3" style="display:none">
+                    <label>
+                        <p>Введите a, b и c соответственно:</p>
+                        <input type="text" id="cond_3_1"><br><br>
+                        <input type="text" id="cond_3_2"><br><br>
+                        <input type="text" id="cond_3_3"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultCond_3(); col('task1_3')">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultCond_3"></p>
+                </div>
+            </li>
+
+            <li><a href="#" onclick="showTask('task1_4')">Посчитать выражение макс(а*б*с, а+б+с)+3</a><br>
+                <div id="task1_4" style="display:none">
+                    <label>
+                        <p>Введите a, b и c соответственно:</p>
+                        <input type="text" id="cond_4_1"><br><br>
+                        <input type="text" id="cond_4_2"><br><br>
+                        <input type="text" id="cond_4_3"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultCond_4(); col('task1_4')">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultCond_4"></p>
+                </div>
+            </li>
+            <li><a href="#" onclick="showTask('task1_5')">Написать программу определения оценки студента по его рейтингу, на основе следующих правил</a><br>
+                <div id="task1_5" style="display:none">
+                    <label>
+                        <p>Введите рейтинг:</p>
+                        <input type="text" id="cond_5"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultCond_5(); col('task1_5')">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultCond_5"></p>
+                </div>
+            </li>
+        </ol>
+    </div>
+    <div>
+        <h2><a href="#" onclick="showTask('task2')">Циклы</a></h2>
+        <ol id="task2" style="display:none">
+            <li><a href="#" onclick="showTask('task2_1')">Найти сумму четных чисел и их количество в диапазоне от 1 до 99</a><br>
+                <div id="task2_1" style="display:none">
+                    <label>
+                        <p>Введите число:</p>
+                        <input type="text" id="loop_1"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultLoop_1(); col('task2_1');">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultLoop_1"></p>
+                </div>
+            </li>
+            <li><a href="#" onclick="showTask('task2_2')">Проверить простое ли число? (число называется простым, если оно делится только само на себя и на 1)</a><br>
+                <div id="task2_2" style="display:none">
+                    <label>
+                        <p>Введите число:</p>
+                        <input type="text" id="loop_2"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultLoop_2(); col('task2_2')">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultLoop_2"></p>
+                </div>
+            </li>
+            <li><a href="#" onclick="showTask('task2_3')">Найти корень натурального числа с точностью до целого (рассмотреть вариант последовательного подбора и метод бинарного поиска)</a><br>
+                <div id="task2_3" style="display:none">
+                    <label>
+                        <p>Введите число:</p>
+                        <input type="text" id="loop_3"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultLoop_3(); col('task2_3')">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultLoop_3"></p>
+                </div>
+            </li>
+            <li><a href="#" onclick="showTask('task2_4')">Вычислить факториал числа n. n! = 1*2*…*n-1*n;!</a><br>
+                <div id="task2_4" style="display:none">
+                    <label>
+                        <p>Введите число:</p>
+                        <input type="text" id="loop_4"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultLoop_4(); col('task2_4')">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultLoop_4"></p>
+                </div>
+            </li>
+            <li><a href="#" onclick="showTask('task2_5')">Посчитать сумму цифр заданного числа</a><br>
+                <div id="task2_5" style="display:none">
+                    <label>
+                        <p>Введите число:</p>
+                        <input type="text" id="loop_5"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultLoop_5(); col('task2_5')">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultLoop_5"></p>
+                </div>
+            </li>
+            <li><a href="#" onclick="showTask('task2_6')">Вывести число, которое является зеркальным отображением последовательности цифр заданного числа, например, задано число 123, вывести 321.</a><br>
+                <div id="task2_6" style="display:none">
+                    <label>
+                        <p>Введите число:</p>
+                        <input type="text" id="loop_6"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultLoop_6(); col('task2_6')">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultLoop_6"></p>
+                </div>
+            </li>
+        </ol>
+    </div>
+    <div>
+        <h2><a href="#" onclick="showTask('task3')">Одномерные массивы</a></h2>
+        <ol id="task3" style="display:none">
+            <li><a href="#" onclick="showTask('task3_1')">Найти минимальный элемент массива</a><br>
+                <div id="task3_1" style="display:none">
+                    <label>
+                        <p>Введите массив через пробел:</p>
+                        <input type="text" id="array_1"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultArray_1(); col('task3_1')">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultArray_1"></p>
+                </div>
+            </li>
+            <li><a href="#" onclick="showTask('task3_2')">Найти максимальный элемент массива</a><br>
+                <div id="task3_2" style="display:none">
+                    <label>
+                        <p>Введите массив через пробел:</p>
+                        <input type="text" id="array_2"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultArray_2(); col('task3_2')">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultArray_2"></p>
+                </div>
+            </li>
+            <li><a href="#" onclick="showTask('task3_3')">Найти индекс минимального элемента массива</a><br>
+                <div id="task3_3" style="display:none">
+                    <label>
+                        <p>Введите массив через пробел:</p>
+                        <input type="text" id="array_3"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultArray_3(); col('task3_3')">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultArray_3"></p>
+                </div>
+            </li>
+            <li><a href="#" onclick="showTask('task3_4')">Найти индекс максимального элемента массива</a><br>
+                <div id="task3_4" style="display:none">
+                    <label>
+                        <p>Введите массив через пробел:</p>
+                        <input type="text" id="array_4"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultArray_4(); col('task3_4')">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultArray_4"></p>
+                </div>
+            </li>
+            <li><a href="#" onclick="showTask('task3_5')">Посчитать сумму элементов массива с нечетными индексами</a><br>
+                <div id="task3_5" style="display:none">
+                    <label>
+                        <p>Введите массив через пробел:</p>
+                        <input type="text" id="array_5"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultArray_5(); col('task3_5')">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultArray_5"></p>
+                </div>
+            </li>
+            <li><a href="#" onclick="showTask('task3_6')">Сделать реверс массива (массив в обратном направлении)</a><br>
+                <div id="task3_6" style="display:none">
+                    <label>
+                        <p>Введите массив через пробел:</p>
+                        <input type="text" id="array_6"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultArray_6(); col('task3_6')">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultArray_6"></p>
+                </div>
+            </li>
+            <li><a href="#" onclick="showTask('task3_7')">Посчитать количество нечетных элементов массива</a><br>
+                <div id="task3_7" style="display:none">
+                    <label>
+                        <p>Введите массив через пробел:</p>
+                        <input type="text" id="array_7"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultArray_7(); col('task3_7')">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultArray_7"></p>
+                </div>
+            </li>
+            <li><a href="#" onclick="showTask('task3_8')">Поменять местами первую и вторую половину массива, например, для массива 1 2 3 4, результат 3 4 1 2</a><br>
+                <div id="task3_8" style="display:none">
+                    <label>
+                        <p>Введите массив через пробел:</p>
+                        <input type="text" id="array_8"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultArray_8(); col('task3_8')">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultArray_8"></p>
+                </div>
+            </li>
+            <li><a href="#" onclick="showTask('task3_9')">Отсортировать массив (пузырьком (Bubble), выбором (Select), вставками (Insert))</a><br>
+                <div id="task3_9" style="display:none">
+                    <label>
+                        <p>Введите массив через пробел:</p>
+                        <input type="text" id="array_9"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultArray_9(); col('task3_9')">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultArray_9"></p>
+                </div>
+            </li>
+        </ol>
+    </div>
+    <div>
+        <h2><a href="#" onclick="showTask('task4')">Функции</a></h2>
+        <ol id="task4" style="display:none">
+            <li><a href="#" onclick="showTask('task4_1')">Получить строковое название дня недели по номеру дня</a><br>
+                <div id="task4_1" style="display:none">
+                    <label>
+                        <p>Введите номер дня:</p>
+                        <input type="text" id="func_1"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultFunc_1(); col('task4_1')">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultFunc_1"></p>
+                </div>
+            </li>
+            <li><a href="#" onclick="showTask('task4_2')">Вводим число (0-999), получаем строку с прописью числа.</a><br>
+                <div id="task4_2" style="display:none">
+                    <label>
+                        <p>Введите число:</p>
+                        <input type="text" id="func_2"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultFunc_2();col('task4_2')">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultFunc_2"></p>
+                </div>
+            </li>
+            <li><a href="#" onclick="showTask('task4_3')">Вводим строку, которая содержит число, написанное прописью (0-999). Получить само число</a><br>
+                <div id="task4_3" style="display:none">
+                    <label>
+                        <p>Введите строку:</p>
+                        <input type="text" id="func_3"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultFunc_3();col('task4_3')">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultFunc_3"></p>
+                </div>
+            </li>
+            <li><a href="#" onclick="showTask('task4_4')">Найти расстояние между двумя точками в двумерном декартовом пространстве</a><br>
+                <div id="task4_4" style="display:none">
+                    <label>
+                        <p>Введите x1:</p>
+                        <input type="text" id="func_4_1"><br><br>
+                        <p>Введите y1:</p>
+                        <input type="text" id="func_4_2"><br><br>
+                        <p>Введите x2:</p>
+                        <input type="text" id="func_4_3"><br><br>
+                        <p>Введите y2:</p>
+                        <input type="text" id="func_4_4"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultFunc_4();col('task4_4')">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultFunc_4"></p>
+                </div>
+            </li>
+            <li><a href="#" onclick="showTask('task4_5')">Для задания 2 расширить диапазон до 999 миллиардов</a><br>
+                <div id="task4_5" style="display:none">
+                    <label>
+                        <p>Введите число:</p>
+                        <input type="text" id="func_5"><br><br>
+                        <input type="submit" value="Send" size="10" onclick="resultFunc_5();col('task4_5')">
+                    </label>
+                    <p>Результат таков:</p>
+                    <p id="resultFunc_5"></p>
+                </div>
+            </li>
+        </ol>
+    </div>
+
+
+</body>
+</html>
